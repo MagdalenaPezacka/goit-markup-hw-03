@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --brand-color: #2196f3;
   --almost-black: #212121;
@@ -13,7 +18,9 @@ body {
   font-style: normal;
   color: var(--almost-black);
 }
-
+.container {
+  max-width: 1200px;
+}
 /*header*/
 .mainpagefont {
   font-family: "Raleway";
@@ -30,6 +37,7 @@ body {
   text-decoration: none;
 }
 .site-nav {
+  display: flex;
   list-style-type: none;
 }
 .site-nav .link {
@@ -65,8 +73,8 @@ body {
 .phonenumber:active {
   color: var(--brand-color);
 }
-
 /*main*/
+
 .sitetitle {
   width: 1600px;
   height: 600px;
