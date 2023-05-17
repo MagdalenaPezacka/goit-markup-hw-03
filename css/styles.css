@@ -12,14 +12,23 @@
   --dark-grey: #2f303a;
   --almost-white: #f5f4fa;
   --middle-grey: rgba(255, 255, 255, 0.6);
+  --almost-grey: #ececec;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-style: normal;
   color: var(--almost-black);
 }
-.container {
-  max-width: 1200px;
+.head-container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--almost-grey);
 }
 /*header*/
 .mainpagefont {
@@ -29,6 +38,8 @@ body {
   line-height: 1.19;
   color: var(--total-black);
   background-color: var(--total-white);
+  padding-top: 24px;
+  padding-left: 0;
 }
 .sitename {
   color: var(--brand-color);
@@ -38,7 +49,10 @@ body {
 }
 .site-nav {
   display: flex;
+  justify-content: baseline;
   list-style-type: none;
+  gap: 46px;
+  padding-left: 0;
 }
 .site-nav .link {
   font-weight: 500;
@@ -51,6 +65,9 @@ body {
 .site-nav .link:active {
   color: var(--brand-color);
 }
+.contacts {
+  justify-content: right;
+}
 .email-link {
   text-decoration: none;
   font-size: 14px;
@@ -62,6 +79,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--light-grey);
+  padding-left: 50px;
 }
 .email-link:hover,
 .email-link:focus,
@@ -78,17 +96,23 @@ body {
 .sitetitle {
   width: 1600px;
   height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--dark-grey);
+  margin: auto;
 }
 .title {
+  margin: auto;
+  padding: 200px 452px 30px 452px;
   font-weight: 900;
   font-size: 44px;
+  text-align: center;
   line-height: 1.36;
   color: var(--total-white);
 }
+
 .button-main {
+  display: flex;
+  align-items: center;
+  margin: auto;
   background-color: var(--brand-color);
   border: var(--brand-color);
   border-radius: 4px;
@@ -100,24 +124,25 @@ body {
   line-height: 1.88;
   padding: 10px 41px 10px 41px;
 }
-.team {
-  background-color: var(--almost-white);
-}
-.team .team-part {
-  background-color: var(--total-white);
-  width: 270px;
-  height: 368px;
-}
+
 .no-points {
   list-style-type: none;
 }
-
+.articles {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-left: 0;
+  gap: 30px;
+}
 .article-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--almost-black);
+  padding-bottom: 10px;
 }
 .article-text {
   font-size: 14px;
@@ -125,24 +150,71 @@ body {
 
   color: var(--light-grey);
 }
+.whatwedo {
+  padding-top: 94px;
+  padding-bottom: 71px;
+}
+.imgwhatwedo {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0;
+}
 .subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--almost-black);
+  padding-bottom: 50px;
+}
+.team {
+  background-color: var(--almost-white);
+  width: 1200px;
+  margin: 0 auto;
+}
+.ourteam {
+  padding-top: 17px;
+  padding-bottom: 50px;
 }
 
+.teammembers {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+.team .team-part {
+  background-color: var(--total-white);
+  margin: 0 auto;
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--almost-black);
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.19;
   color: var(--light-grey);
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 /*portfolio*/
 .portfolio-main-button {
@@ -197,11 +269,16 @@ body {
 
 /*footer*/
 footer {
-  width: 1600px;
+  width: 1200px;
   height: 252px;
   left: 0px;
   top: 2097px;
   background-color: var(--dark-grey);
+}
+.foot-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
 }
 .footermainpagefont {
   font-family: "Raleway";
@@ -209,20 +286,26 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   color: var(--total-white);
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .company-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--total-white);
+  padding-bottom: 9px;
 }
 .footer-email-link {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   color: var(--middle-grey);
+  padding-bottom: 9px;
 }
 .footer-phonenumber {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;

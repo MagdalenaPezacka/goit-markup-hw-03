@@ -115,3 +115,8 @@ summary {
   display: list-item;
 }
 /*# sourceMappingURL=/sm/5b7c27b6a0fd11e81f813b36dc26f6049a71a06907ce03d53d65a3bfe866b576.map */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
