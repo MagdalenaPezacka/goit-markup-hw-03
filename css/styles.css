@@ -13,6 +13,7 @@
   --almost-white: #f5f4fa;
   --middle-grey: rgba(255, 255, 255, 0.6);
   --almost-grey: #ececec;
+  --for-border: #eeeeee;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
@@ -25,21 +26,22 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--almost-grey);
 }
 /*header*/
 .mainpagefont {
+  display: flex;
+  margin: 0;
+  padding: 0;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--total-black);
   background-color: var(--total-white);
-  padding-top: 24px;
-  padding-left: 0;
 }
 .sitename {
   color: var(--brand-color);
@@ -49,10 +51,12 @@ body {
 }
 .site-nav {
   display: flex;
-  justify-content: baseline;
+
+  justify-content: space-around;
   list-style-type: none;
   gap: 46px;
-  padding-left: 0;
+  padding-left: 93px;
+  padding-right: 371px;
 }
 .site-nav .link {
   font-weight: 500;
@@ -94,10 +98,12 @@ body {
 /*main*/
 
 .sitetitle {
+  display: block;
   width: 1600px;
   height: 600px;
   background-color: var(--dark-grey);
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 .title {
   margin: auto;
@@ -217,6 +223,25 @@ body {
   padding-bottom: 30px;
 }
 /*portfolio*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.buttons {
+  display: flex;
+  max-width: 572 px;
+  height: 54px;
+  gap: 8px;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 34px;
+}
+
 .portfolio-main-button {
   background-color: var(--brand-color);
   border: var(--brand-color);
@@ -250,21 +275,48 @@ body {
 .portfolio-button:active {
   color: var(--brand-color);
 }
+.all-projects {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.project {
+  display: block;
+  margin: 0 auto;
+  flex-basis: calc((100% - 20px) / 3);
+}
 .all-projects .project {
   background-color: var(--total-white);
   width: 370px;
   height: 404px;
+}
+
+.undersign {
+  border: 1px solid var(--for-border);
+  border-top: none;
 }
 .portfolio-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--almost-black);
+  margin: 0;
+  padding: 20px 24px 4px 24px;
 }
 .portfolio-link {
   font-size: 16px;
   line-height: 1.87;
   color: var(--light-grey);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+
+  margin: 0;
 }
 
 /*footer*/
