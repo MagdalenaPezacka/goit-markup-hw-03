@@ -20,16 +20,20 @@ body {
   font-style: normal;
   color: var(--almost-black);
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .head-container {
-  width: 1200px;
   display: flex;
+  width: 1200px;
+  height: 80px;
   margin: 0 auto;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--almost-grey);
+  border-bottom: 1px solid var(--almost-grey);
 }
 /*header*/
 .mainpagefont {
@@ -51,12 +55,12 @@ body {
 }
 .site-nav {
   display: flex;
-
   justify-content: space-around;
   list-style-type: none;
   gap: 46px;
-  padding-left: 93px;
-  padding-right: 371px;
+  margin-left: 93px;
+  margin-right: 371px;
+  padding-left: 0;
 }
 .site-nav .link {
   font-weight: 500;
@@ -83,7 +87,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--light-grey);
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .email-link:hover,
 .email-link:focus,
@@ -102,7 +106,7 @@ body {
   width: 1600px;
   height: 600px;
   background-color: var(--dark-grey);
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 .title {
@@ -116,9 +120,9 @@ body {
 }
 
 .button-main {
-  display: flex;
   align-items: center;
   margin: auto;
+  padding: 10px 41px 10px 41px;
   background-color: var(--brand-color);
   border: var(--brand-color);
   border-radius: 4px;
@@ -128,7 +132,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 41px 10px 41px;
 }
 
 .no-points {
@@ -143,23 +146,22 @@ body {
   gap: 30px;
 }
 .article-title {
+  margin: 0;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--almost-black);
-  padding-bottom: 10px;
 }
 .article-text {
+  margin: 0;
   font-size: 14px;
   line-height: 1.71;
-
+  letter-spacing: 0.03em;
   color: var(--light-grey);
 }
-.whatwedo {
-  padding-top: 94px;
-  padding-bottom: 71px;
-}
+
 .imgwhatwedo {
   display: flex;
   margin: 0 auto;
@@ -175,6 +177,7 @@ body {
   text-align: center;
   color: var(--almost-black);
   padding-bottom: 50px;
+  margin: 0;
 }
 .team {
   background-color: var(--almost-white);
@@ -182,7 +185,8 @@ body {
   margin: 0 auto;
 }
 .ourteam {
-  padding-top: 17px;
+  margin: 0;
+
   padding-bottom: 50px;
 }
 
@@ -192,7 +196,7 @@ body {
   width: 1200px;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 94px;
+
   padding-left: 0;
 }
 .team .team-part {
@@ -225,6 +229,7 @@ body {
 /*portfolio*/
 .container {
   max-width: 1200px;
+
   margin: 0 auto;
   padding: 0;
   padding-top: 94px;
@@ -232,17 +237,20 @@ body {
 }
 .buttons {
   display: flex;
-  max-width: 572 px;
+  width: 572px;
   height: 54px;
   gap: 8px;
   justify-content: center;
-  margin: 0;
+  align-items: flex-start;
+  margin: 0 auto;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 34px;
 }
 
 .portfolio-main-button {
+  align-items: center;
+  margin: auto;
   background-color: var(--brand-color);
   border: var(--brand-color);
   border-radius: 4px;
@@ -253,6 +261,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .portfolio-main-button:hover,
 .portfolio-main-button:focus,
@@ -261,6 +271,9 @@ body {
   background-color: var(--total-white);
 }
 .portfolio-button {
+  align-items: center;
+  margin: auto;
+
   background-color: var(--almost-white);
   border: var(--brand-color);
   border-radius: 4px;
@@ -268,7 +281,10 @@ body {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
+
   line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
@@ -288,7 +304,6 @@ body {
 .project {
   display: block;
   margin: 0 auto;
-  flex-basis: calc((100% - 20px) / 3);
 }
 .all-projects .project {
   background-color: var(--total-white);
@@ -323,8 +338,7 @@ body {
 footer {
   width: 1200px;
   height: 252px;
-  left: 0px;
-  top: 2097px;
+
   background-color: var(--dark-grey);
 }
 .foot-container {
